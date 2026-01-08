@@ -364,6 +364,37 @@ body {
     font-size: 12.5px;
 }
 
+.top-download {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 9999;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 14px;
+  font-weight: 800;
+  font-size: 13px;
+  text-decoration: none;
+  color: #e9eefb;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
+  opacity: 0.95;
+}
+
+.download-btn:active {
+  transform: translateY(0);
+}
+
+
 .dot {
     opacity: 0.5;
 }
@@ -376,4 +407,5 @@ body {
     .grid {
         grid-template-columns: 1fr;
     }
+
 }
